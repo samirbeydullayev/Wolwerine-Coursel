@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+body{
+    position: relative;
+}
+
+
+.container{
+    width: 90%;
+    margin: 200px auto;
+    
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10%;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif
+}
+
+/* icon */
+#right{
+    position: absolute;
+    z-index: 30;
+    top: 50%;
+    transform: translateY(-50%);
+    right:2%;
+    font-size: 45px;
+    cursor: pointer;
+    color:white
+}
+#left{
+    position: absolute;
+    z-index: 30;
+    top: 50%;
+    transform: translateY(-50%);    
+    left:2%;
+    font-size: 45px;
+    cursor: pointer;
+    color: white
+}
+#close{
+    position: absolute;
+    z-index: 30;
+    cursor: pointer;
+    right: 2%;
+    top: 2%;
+    font-size: 30px;
+    color: white;
+    
+}
+/* icon */
+
+
+/* img */
+ul li{
+
+    display: inline-block;
+    width: 19.6%;
+    height: 150px;
+    border: 1px solid black;
+}
+ul li img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+/* img-end */
+
+/* monitor */
+
+.window{
+    bottom: 0%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 22;
+    transform: scale(0,0);
+    transition: all 0.4s ease;
+}
+.window .monitor{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid white;
+    position: absolute;
+    width:60%;
+    height: 400px;
+    overflow: hidden;
+    z-index: 33
+}
+.monitor .slide{
+width: 500%;
+position: absolute;
+left:0%;
+transition: all 1s ease
+
+}
+.slide div{
+    display: inline-block;
+    width: 19.92%;
+}
+.slide  div img{
+    width: 100%;
+    height: 400px;
+    
+
+}
+/* monitor-end */
+
+
+@media screen and (max-width: 1025px) {
+ ul li{
+     width: 18.6%;
+     height: 115px;
+ }
+ .monitor{
+    width: 80% !important;
+    height: 320px !important;
+ }
+ .monitor img{
+     height: 320px !important;
+ }
+}
